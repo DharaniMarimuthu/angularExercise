@@ -1,0 +1,9 @@
+h1 {
+  color: rgb(117, 194, 245);
+  cursor: pointer;
+}
+div {
+  background-color: blueviolet;
+  height: 100px;
+  width: 10%;
+}

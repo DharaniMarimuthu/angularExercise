@@ -1,0 +1,46 @@
+{
+  "product": [
+    {
+      "productId": 100,
+      "productName": "Lakme",
+      "quantityOnHand": 100,
+      "price": 1000
+    },
+    {
+      "productId": 101,
+      "productName": "Dairy Milk silk",
+      "quantityOnHand": 90,
+      "price": 60
+    },
+    {
+      "productId": 102,
+      "productName": "Cycle",
+      "quantityOnHand": 70,
+      "price": 5000
+    },
+    {
+      "productId": 103,
+      "productName": "Mobile",
+      "quantityOnHand": 300,
+      "price": 10000
+    },
+    {
+      "productId": 104,
+      "productName": "Pen",
+      "quantityOnHand": 178,
+      "price": 100
+    },
+    {
+      "productId": 105,
+      "productName": "Speaker",
+      "quantityOnHand": 30,
+      "price": 1000
+    },
+    {
+      "productId": 106,
+      "productName": "Air pods",
+      "quantityOnHand": 300,
+      "price": 1500
+    }
+  ]
+}

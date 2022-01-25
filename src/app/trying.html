@@ -1,0 +1,19 @@
+<br/>
+
+Number 1 : <input type="number" [(ngModel)]="num1">
+
+Number 2 : <input type="number" [(ngModel)]="num2">
+
+<button (click)="add(num1,num2)">sum</button>
+
+Result :{{sum}}
+
+<br/>
+Number 1 : <input type="number" name="firstNum" #firstNum  value=0>
+
+Number 2 : <input type="number" name="secondNum" #secondNum value=0>
+
+<button (click)="add(firstNum.value,secondNum.value)">sum</button>
+
+Result :{{sum}}
+<br/><br/><hr>
