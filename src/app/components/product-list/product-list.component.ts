@@ -19,11 +19,13 @@ export class ProductListComponent implements OnInit {
   }
   deleteProduct(productId: any){
     this.productService.deleteProduct(productId).subscribe((data=>{
-
+      console.log(data);
+      
+      this.productService.getProducts().subscribe((data:any)=>{
+        this.products=data;
+      });
     }))
-    this.productService.getProducts().subscribe((data:any)=>{
-      this.products=data;
-    });
+    
 
   }
 }

@@ -15,7 +15,8 @@ export class ProductService {
   }
 
   deleteProduct(productId:number):Observable<any>{
-    return this.httpClient.delete(productUrl+'/'+productId)
+    // return this.httpClient.delete(productUrl+'/'+productId)
+    return this.httpClient.delete(`${productUrl}/${productId}`);
   }
 
   getProductsHardcoded(){
