@@ -1,28 +1,12 @@
-<app-product-list></app-product-list><hr><br>
+<!-- 
+    <app-product-list></app-product-list><hr><br>
 <app-employee></app-employee>
 <app-employee-list></app-employee-list><br><hr>
-
-<button (click)="toggleOthers()">{{!showDown?'Show':'Hide'}} Down</button><br>
-
-<ng-container *ngIf="showDown"> 
-<try-root></try-root>
-<div #div (mouseover)="overDiv()"></div><hr>
-<h1 (click)="this.changeName()">Click to change name</h1>
-<h3>{{ name }}</h3>
-<img [src]="imageUrl"><br><br>
-<button (click)="changeImage()" type="button" class="btn btn-primary">Click to change Image</button><br/>
-
-<br/><hr>
-
-<button *ngIf="userLogged">Login</button><br><br>
-<div [ngSwitch]="color">
-    <p *ngSwitchCase="'red'" style="color: red;">Red</p>
-    <p *ngSwitchCase="'yellow'" style="color: yellow;">Yellow</p>
-</div>
+ -->
+ <a routerLink="employee">Employee |</a>
+ <a routerLink="employeeList">Employee List |</a>
+ <a routerLink="productList">Product List |</a>
+ <a routerLink="productAdd">Product Add |</a>
+ <a routerLink="others">Others |</a><br><hr>
+ <router-outlet></router-outlet>
 <br>
-<h2>Departments</h2>
-<ul *ngIf="!ishidden">
-    <li *ngFor="let dept of depts">{{dept}}</li>
-</ul>
-<button (click)="hide()">{{ishidden?'Show':'Hide'}} Departments</button>
-</ng-container>
