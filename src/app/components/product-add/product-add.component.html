@@ -1,1 +1,32 @@
-<p>product-add works!</p>
+<h1>Add Product Form</h1>
+<div class="container">
+    <form novalidate [formGroup]="productForm" (ngSubmit)="saveProduct()">
+        <fieldset>
+            <div class="form-group">
+                <label>Product Id</label>
+                <input type="number" formControlName="productId" class="form-control">
+                <div class="alert alert-danger" *ngIf="productForm?.get('productId')?.hasError('required') && productForm?.get('productId')?.dirty ">
+                    Please enter product id</div>
+                <label>Product Name</label>
+                <input type="text" formControlName="productName" class="form-control">
+                <div class="alert alert-danger" *ngIf="productForm?.get('productName')?.hasError('required') && productForm?.get('productName')?.dirty ">
+                    Please enter product name</div>
+                <div class="alert alert-danger" *ngIf="productForm?.get('productName')?.hasError('minlength') && productForm?.get('productName')?.dirty ">
+                    Please enter a minimum of 4 letters</div>
+                <label>Available Quantity</label>
+                <input type="number" formControlName="quantityOnHand" class="form-control">
+                <div class="alert alert-danger" *ngIf="productForm?.get('quantityOnHand')?.hasError('required') && productForm?.get('quantityOnHand')?.dirty ">
+                    Please enter product name</div>
+                <div class="alert alert-danger" *ngIf="productForm?.get('quantityOnHand')?.hasError('min') && productForm?.get('quantityOnHand')?.dirty ">
+                    Quatity should not be less than 10</div>
+                <label>Price</label>
+                <input type="number" formControlName="price" class="form-control">
+                <div class="alert alert-danger" *ngIf="productForm?.get('price')?.hasError('required') && productForm?.get('price')?.dirty ">
+                    Please enter price</div>
+                <div class="alert alert-danger" *ngIf="productForm?.get('price')?.hasError('min') && productForm?.get('price')?.dirty ">
+                    Please enter a minimum of 100 rupees</div>
+            </div>
+        </fieldset>
+        <button class="btn btn-primary" type="submit" [disabled]="productForm.status.toLowerCase()=='invalid'">Save Product</button>
+    </form>
+</div>

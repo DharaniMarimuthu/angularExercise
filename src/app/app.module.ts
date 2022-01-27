@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TryComponent } from './trying';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductAppComponent } from './components/product-app/product-app.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
@@ -28,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     NgbModule
   ],
   providers: [],

@@ -41,6 +41,18 @@
       "productName": "Air pods",
       "quantityOnHand": 300,
       "price": 1500
+    },
+    {
+      "productId": 107,
+      "productName": "Mouse",
+      "quantityOnHand": 500,
+      "price": 600
+    },
+    {
+      "productId": 108,
+      "productName": "Keyboard",
+      "quantityOnHand": 100,
+      "price": 300
     }
   ]
 }

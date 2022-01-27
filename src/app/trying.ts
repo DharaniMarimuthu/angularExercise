@@ -3,13 +3,14 @@ import { Component } from "@angular/core";
 @Component({
     selector:'try-root',
     // template:'<h2>TryComponent Works!</h2>'
-    templateUrl:'./trying.html'
+    templateUrl:'./trying.html',
+    styleUrls:['./trying.css']
 })
 
 export class TryComponent{
-    num1:any=0;
-    num2:any=0;
-    sum:any;
+    num1 =0;
+    num2 =0;
+    sum  =0;
     name='Dharu'
   first="https://picsum.photos/200/300";
   second="https://picsum.photos/200";
