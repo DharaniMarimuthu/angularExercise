@@ -16,7 +16,7 @@ export class TryComponent{
   second="https://picsum.photos/200";
   imageUrl=this.first;
   div: any;
-
+  clipboardText="Enter text to copy";
   
   userLogged=true;
   color='yellow'
@@ -32,6 +32,10 @@ export class TryComponent{
     this.name="Dharani"
   }
  
+  copyToClipboard(){
+    navigator.clipboard.writeText(this.clipboardText);
+
+  }
   hide(){
     this.ishidden=!this.ishidden;
   }

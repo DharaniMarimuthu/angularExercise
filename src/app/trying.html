@@ -1,5 +1,10 @@
-<button (click)="toggleOthers()">{{!showDown?'Show':'Hide'}} Down</button><br>
+<button (click)="toggleOthers()">{{!showDown?'Show':'Hide'}} Down</button><br><br>
 
+<button type="button" class="btn btn-info btn-lg" (click)="copyToClipboard()">
+
+    Copy to clipboard <span class="fa fa-copy fa-1x" ></span>   
+    </button><br><br>
+    <textarea [(ngModel)]="clipboardText"></textarea>
 <ng-container *ngIf="showDown"> 
 <br/>
 
@@ -40,4 +45,5 @@ Result :{{sum}} -->
     <li *ngFor="let dept of depts">{{dept}}</li>
 </ul>
 <button (click)="hide()">{{ishidden?'Show':'Hide'}} Departments</button>
+
 </ng-container>
