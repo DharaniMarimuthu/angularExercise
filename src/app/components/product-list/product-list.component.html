@@ -14,6 +14,7 @@
             <td>{{product.quantityOnHand}}</td>
             <td>{{product.price}}</td>
             <td><button class="btn btn-danger" (click)="deleteProduct(product.productId)">Delete</button></td>
+            <td><button class="btn btn-danger" (click)="editProduct(product.productId)">Edit</button></td>
         </tr>
     </table>
 </div>
@@ -21,4 +22,5 @@
 <br>
 <br>
 <button class="btn btn-primary" (click)="navigateToProductAdd()">Add Product</button>
+
 <br><br>

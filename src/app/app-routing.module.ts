@@ -13,6 +13,7 @@ const routes: Routes = [
   {path:"employeeList",component:EmployeeListComponent},
   {path:"productList",component:ProductListComponent},
   {path:"productAdd",component:ProductAddComponent},
+  {path:"productEdit/:productId",component:ProductAddComponent},
   {path:"others",component:TryComponent},
 
 ];
