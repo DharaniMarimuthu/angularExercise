@@ -1,6 +1,6 @@
-<h1>Add Product Form</h1>
+<h1>{{routeProductId==-1?"Add ":"Edit "}}Product Form</h1>
 <div class="container">
-    <form novalidate [formGroup]="productForm" (ngSubmit)="saveProduct()">
+    <form novalidate [formGroup]="productForm" (ngSubmit)="saveEditProduct()">
         <fieldset>
             <div class="form-group">
                 <label>Product Id</label>
@@ -27,6 +27,6 @@
                     Please enter a minimum of 100 rupees</div>
             </div>
         </fieldset>
-        <button class="btn btn-primary" type="submit" [disabled]="productForm.status.toLowerCase()=='invalid'">Save Product</button>
+        <button class="btn btn-primary" type="submit" [disabled]="productForm.status.toLowerCase()=='invalid' || productForm.touched==false">{{routeProductId==-1?"Save Product":"Edit Product"}}</button>
     </form>
 </div>

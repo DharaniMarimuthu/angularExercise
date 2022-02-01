@@ -53,6 +53,12 @@
       "productName": "Keyboard",
       "quantityOnHand": 100,
       "price": 300
+    },
+    {
+      "productName": "Lakme reinvent",
+      "quantityOnHand": 100,
+      "price": 1000,
+      "productId": 109
     }
   ]
 }
